@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+
+<!-- Mirrored from www.leafground.com/pages/Alert.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:26 GMT -->
+<head>
+    <script>
+        function normalAlert() {
+            alert("I am an alert box!");
+        }
+        function confirmAlert() {
+            var x;
+            if (confirm("Press a button!") == true) {
+                x = "You pressed OK!";
+            } else {
+                x = "You pressed Cancel!";
+            }
+            document.getElementById("result").innerHTML = x;
+        }
+        function confirmPrompt() {
+            var person = prompt("Please enter your training institute name", "TestLeaf");
+
+            if (person != null) {
+                if (person != "TestLeaf") {
+                    document.getElementById("result1").innerHTML =
+                        "You should not have enjoyed learning at " + person + " as compared to TestLeaf! Right?";
+                } else {
+                    document.getElementById("result1").innerHTML =
+                        "You should have enjoyed learning at " + person + ".";
+                }
+            }
+        }
+        function lineBreaks() {
+            alert("Hello\nHow are you doing today?");
+        }
+    </script>
+    <script src="../../unpkg.com/sweetalert%402.1.2/dist/sweetalert.min.js"></script>
+    <link rel="icon" href="../images/tl.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/tl.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" media="screen">
+    <link rel="stylesheet" href="../css/main.css" media="screen">
+    <link rel="stylesheet" href="../css/header.css" media="screen">
+    <script>
+        function sweetalert() {
+            swal("Happy Coding!");
+        }
+    </script>
+    <title>TestLeaf - Interact with Alerts</title>
+</head>
+
+<body class="page page-id-153 page-template page-template-page-keyword-category page-template-page-keyword-category-php"
+    itemscope itemtype="http://schema.org/WebPage">
+    <div id="wrapper">
+        <div class="wrapper-outer">
+
+            <div class="wrapper wrapper-footer" data-alias="">
+                <div class="grid-container clearfix">
+                    <section class="row row-1">
+                        <section class="column column-1 grid-left-0 grid-width-24">
+                            <div class="block-content">
+                                <ul>
+                                    <li id="text-2" class="widget widget_text">
+                                        <h3 class="widget-title"><span class="widget-inner"></span></h3>
+                                        <a href="../home.html">
+                                            <img src="../images/testleaf_logo.png" alt="logo Testleaf" height="76"
+                                                width="232">
+                                        </a>
+                                </ul>
+                            </div>
+                            <!-- .block-content -->
+                        </section>
+                        <!-- .column -->
+                    </section>
+                    <!-- .row -->
+                </div>
+                <!-- .grid-container -->
+            </div>
+
+            <div id="content">
+                <div class="container category_land">
+                    <div class="wp-page-heading">
+                        <h1 class="wp-heading" itemprop="name">Handle Alerts<del></del></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contentblock" class="w560">
+                <section class="innerblock">
+                    <div class="example">
+                        <div class="row">
+                            <div class="large-6 small-12 columns">
+                                <br>
+                                <br>
+                                <label for="home">Click the button to display a alert box.</label> <br> <br>
+                                <button onclick="normalAlert()">Alert Box</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="example">
+                        <div class="row">
+                            <div class="large-6 small-12 columns">
+                                <br>
+                                <br>
+                                <label for="home">Click the button to display a confirm box.</label> <br> <br>
+                                <button onclick="confirmAlert()">Confirm Box</button><br> <br>
+                                <p id="result"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="example">
+                        <div class="row">
+                            <div class="large-6 small-12 columns">
+                                <br>
+                                <br>
+                                <label for="home">Click the button to display a prompt box.</label> <br> <br>
+                                <button onclick="confirmPrompt()">Prompt Box</button><br> <br>
+                                <p id="result1"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="example">
+                        <div class="row">
+                            <div class="large-6 small-12 columns">
+                                <br>
+                                <br>
+                                <label for="position">Click the button to learn line-breaks in an alert.</label> <br>
+                                <br>
+                                <button onclick="lineBreaks()">Line Breaks?</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="example">
+                        <div class="row">
+                            <div class="large-6 small-12 columns">
+                                <br>
+                                <br>
+                                <label for="position">Click the below button and click OK.</label> <br>
+                                <br>
+                                <button id="btn" onclick="sweetalert()">Sweet Alert</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="tl.html"></script>
+</body>
+
+
+<!-- Mirrored from www.leafground.com/pages/Alert.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:27 GMT -->
+</html>

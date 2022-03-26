@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from www.leafground.com/pages/disapper.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:44 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TestLeaf - Wait for Disappearance of Element</title>
+    <link rel="stylesheet" href="../css/header.css" media="screen">
+    <link rel="icon" href="../images/tl.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/tl.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" media="screen">
+    <link rel="stylesheet" href="../css/main.css" media="screen">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../resources/demos/style.html">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script>
+        var btn;
+        $(document).ready(function () {
+            $("#btn").delay(2000).fadeOut();
+            $("#show").delay(2100).fadeIn();
+        });
+    </script>
+    <style>
+        body {
+            margin: 0px;
+            /* height: 100vh; */
+        }
+
+        .inst {
+            font-size: large;
+            color: black;
+            user-select: none;
+            padding: 10px;
+            box-shadow: 0 1px 5px rgb(0, 0, 0, 0.5);
+            margin: 10px 0px 0px 0px;
+        }
+
+        .inst ol {
+            display: block;
+            color: brown;
+            padding: 10px;
+            font-size: medium;
+        }
+
+        .inst ul {
+            color: #555;
+            font-size: small;
+            /* padding: 10px 0px 0px 20px; */
+        }
+
+        .disappear {
+            padding: 20px;
+            border: 10px;
+
+        }
+
+        .disappear p {
+            color: black;
+            font-size: medium;
+            padding-top: 20px;
+            position: absolute;
+        }
+    </style>
+    <!-- <style>
+        #mydiv {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 35em;
+            height: 30em;
+            margin-top: -9em;
+            /*set to a negative number 1/2 of your height*/
+            margin-left: -15em;
+            /*set to a negative number 1/2 of your width*/
+        }
+
+        label {
+            display: inline-block;
+            width: 10em;
+        }
+    </style> -->
+</head>
+
+<body class="page page-id-153 page-template page-template-page-keyword-category page-template-page-keyword-category-php"
+    itemscope itemtype="http://schema.org/WebPage" onload="clickWait()">
+    <div id="wrapper">
+        <div class="wrapper-outer">
+
+            <div class="wrapper wrapper-footer" data-alias="">
+                <div class="grid-container clearfix">
+                    <section class="row row-1">
+                        <section class="column column-1 grid-left-0 grid-width-24">
+                            <div class="block-content">
+                                <ul>
+                                    <li id="text-2" class="widget widget_text">
+                                        <h3 class="widget-title">
+                                            <span class="widget-inner"></span>
+                                        </h3>
+                                        <a href="../home.html">
+                                            <img src="../images/testleaf_logo.png" alt="logo Testleaf" height="76"
+                                                width="232">
+                                        </a>
+                                </ul>
+                            </div>
+                            <!-- .block-content -->
+                        </section>
+                        <!-- .column -->
+                    </section>
+                    <!-- .row -->
+                </div>
+                <!-- .grid-container -->
+            </div>
+
+            <div id="content">
+                <div class="container category_land">
+                    <div class="wp-page-heading">
+                        <h1 class="wp-heading" itemprop="name">Explicit Wait for Element Disappearance
+                            <del></del>
+                        </h1>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="container">
+
+                <div class="inst">
+                    <ul>
+                        <li>1. Once Page has been loaded, You'll be able to see a BUTTON</li>
+                        <li>2. Make sure that button disappeared</li>
+                        <li>3. Once it disappeared you can find a text saying disappeared, verify that</li>
+                    </ul>
+                </div>
+                <div class="disappear">
+                    <button id="btn">
+                        <b>I'm going to disappear. Keep looking at me!!</b></button>
+                    <p>
+                        Wait for few seconds. If the above button get disappeared then confirm that you have
+                        learnt something new today.<br>
+                    </p>
+                </div>
+                <div class="disappear" id="show" hidden>
+                    <p><strong>
+                            I know you can do it! Button is disappeared!
+                        </strong></p>
+                </div>
+
+            </div>
+            <!-- <div id=" contentblock" class="w560">
+                        <section class="innerblock">
+                            <div class="example">
+                                <div class="row">
+                                    <div class="large-6 small-12 columns">
+                                        <br>
+                                        <br>
+                                        <button id="btn" onclick="clicked()"><b>I'm going to disapper.Keep looking at me
+                                                !!</b></button>
+                                        <p>
+                                            Wait for few seconds. If the above button get disappered then confirm that
+                                            you have
+                                            learnt something new today<br>
+                                            I know you can do it!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                </div> -->
+
+            <!-- <script src="tl.js"></script> -->
+</body>
+
+
+<!-- Mirrored from www.leafground.com/pages/disapper.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:44 GMT -->
+</html>

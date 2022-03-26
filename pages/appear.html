@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from www.leafground.com/pages/appear.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:44 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TestLeaf - Wait for Appearance of Element</title>
+    <link rel="stylesheet" href="../css/header.css" media="screen">
+    <link rel="icon" href="../images/tl.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/tl.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" media="screen">
+    <link rel="stylesheet" href="../css/main.css" media="screen">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../resources/demos/style.html">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script>
+        function clickWait() {
+            setTimeout(() => {
+                document.getElementById("btn").hidden = false;
+            }, 4000);
+        }
+    </script>
+    <style>
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-content: space-between;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: chocolate;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: medium;
+            box-shadow: 3px 3px 8px 0px #f1f1f1;
+        }
+
+        .inst {
+            font-size: large;
+            color: black;
+            user-select: none;
+            padding: 10px;
+            box-shadow: 0 1px 5px rgb(0, 0, 0, 0.5);
+            margin: 10px 0px 0px 0px;
+        }
+
+        .inst ol {
+            display: block;
+            color: brown;
+            /* padding: 10px; */
+            /* font-size: medium; */
+        }
+    </style>
+</head>
+
+<body class="page page-id-153 page-template page-template-page-keyword-category page-template-page-keyword-category-php"
+    itemscope itemtype="http://schema.org/WebPage" onload="clickWait()">
+    <div id="wrapper">
+        <div class="wrapper-outer">
+
+            <div class="wrapper wrapper-footer" data-alias="">
+                <div class="grid-container clearfix">
+                    <section class="row row-1">
+                        <section class="column column-1 grid-left-0 grid-width-24">
+                            <div class="block-content">
+                                <ul>
+                                    <li id="text-2" class="widget widget_text">
+                                        <h3 class="widget-title">
+                                            <span class="widget-inner"></span>
+                                        </h3>
+                                        <a href="../home.html">
+                                            <img src="../images/testleaf_logo.png" alt="logo Testleaf" height="76"
+                                                width="232">
+                                        </a>
+                                </ul>
+                            </div>
+                            <!-- .block-content -->
+                        </section>
+                        <!-- .column -->
+                    </section>
+                    <!-- .row -->
+                </div>
+                <!-- .grid-container -->
+            </div>
+
+            <div id="content">
+                <div class="container category_land">
+                    <div class="wp-page-heading">
+                        <h1 class="wp-heading" itemprop="name">Explicit Wait for Element to Appears
+                            <del></del>
+                        </h1>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <div class="flex">
+                    <button><b>Hey!</b></button>
+                    <button><b>We are five friends here</b></button>
+                    <button id="btn" hidden><b>Voila! I'm here Guys</b></button>
+                    <button><b>One of our friend is missing</b></button>
+                    <button><b>I know you can find him</b></button>
+                </div>
+                <div class="inst">
+                    <ol>TODO:
+                        <li>There are totally 5 Buttons in this page</li>
+                        <li>One of them is disappeared and it will appears after few seconds</li>
+                        <li>Make sure you get that text</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- <script src="tl.js"></script> -->
+</body>
+
+
+<!-- Mirrored from www.leafground.com/pages/appear.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:44 GMT -->
+</html>

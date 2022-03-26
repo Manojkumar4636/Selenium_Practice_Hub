@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+
+<!-- Mirrored from www.leafground.com/pages/table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:25 GMT -->
+<head>
+
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else {
+                x.innerHTML = "Geolocation is not supported by this 
+                browser.";}
+            }
+            function showPosition(position) {
+                x.innerHTML = "Latitude: <div id='lat-value'>" +
+                    position.coords.latitude +
+                    "</div><br>Longitude: <div id='long-value'>" +
+                    position.coords.longitude +
+                    "</div><br><div id='map-link'><a href='
+                http://maps.google.com/?q=" + position.coords.latitude +
+                "," + position.coords.longitude + "'>See it on 
+                Google</a ></div > ";
+            }
+    </script>
+    <div id="content" class="large-12 columns">
+        <script src="jquery.tablesorter.min.html"></script>
+        <script>
+                $(function () {
+                    $("#table1").tablesorter();
+                    $("#table2").tablesorter();
+                });
+        </script>
+        <style>
+ body {
+            margin: 0px;
+            height: 100vh;
+        }
+
+        .table {
+            color: black;
+            font-size: medium;
+            padding: 10px;
+            user-select: none;
+        }
+
+	.table {
+  	border-collapse: collapse;
+	}
+
+	.table {
+ 	 border: 1px solid black;
+	}
+
+	.tr{
+ 	 border: 1px solid black;
+	}
+
+        .table th {
+            color: blue
+        }
+
+        .table td {
+            color: darkslategray
+        }
+
+        .inst {
+            font-size: large;
+            color: black;
+            user-select: none;
+            padding: 10px;
+            box-shadow: 0 1px 5px rgb(0, 0, 0, 0.5);
+            margin: 10px 0px 0px 0px;
+        }
+
+        .inst ol {
+            display: block;
+            color: brown;
+            padding: 10px;
+            font-size: medium;
+        }
+
+        .inst ul {
+            color: #555;
+            font-size: small;
+            padding: 10px 0px 0px 20px;
+        }
+
+</style>
+
+
+        <link rel="icon" href="../images/tl.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../images/tl.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/main.css" media="screen">
+        <link rel="stylesheet" href="../css/header.css" media="screen">
+
+        <title>TestLeaf - Interact with Tables</title>
+</head>
+
+<body class="page page-id-153 page-template 
+page-template-page-keyword-category 
+page-template-page-keyword-category-php"
+    itemscope itemtype="
+http://schema.org/WebPage">
+    <div id="wrapper">
+        <div class="wrapper-outer">
+
+            <div class="wrapper wrapper-footer" data-alias="">
+                <div class="grid-container clearfix">
+                    <section class="row row-1">
+                        <section class="column column-1 
+grid-left-0 grid-width-24">
+                            <div class="block-content">
+                                <ul>
+                                    <li id="text-2" class="widget widget_text">
+                                        <h3 class="widget-title"><span class="widget-inner"></span></h3>
+                                        <a href="../home.html">
+                                            <img src="../images/testleaf_logo.png" alt="logo Testleaf" height="76"
+                                                width="232">
+                                        </a>
+                                </ul>
+                            </div>
+                            <!-- .block-content -->
+                        </section>
+                        <!-- .column -->
+                    </section>
+                    <!-- .row -->
+                </div>
+                <!-- .grid-container -->
+            </div>
+
+            <div id="content">
+                <div class="container category">
+                    <div>
+                        <h1  itemprop="name">Toy with Tables<del></del></h1>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="contentblock" class="">
+                <section class="innerblock">
+                    <br><br>
+                     <div class=" container table">
+               		 <table id="table_id" class="display">
+			    <tr>
+                                <th>Selenium Learning Details</th>
+                                <th>Progress</th>
+                                <th>Vital Task</th>
+				<th>Week of Learning</th>
+				<th>Mentor Name</th>
+				<th>Remarks</th>
+                            </tr>
+                            	<td>Learn Locators</td>
+                            	<td>100%</td>
+                            	<td><input type="checkbox" name="vital" />&nbsp;</td>
+				<td>Week 2</td>
+				<td>Sarath</td>
+				<td>id, name, linkText, className, tagName, xpath, cssSelector</td>
+                            </tr>
+                            <tr class='even'>
+                                <td>Learn to interact with Elements</td>
+                                <td>80%</td>
+                                <td><input type="checkbox" name="vital" />&nbsp;</td>
+				<td>Week 2</td>
+				<td>Babu</td>
+				<td>sendKeys,clear,click</td>
+                            </tr>
+                            <tr class='even'>
+                                <td>Learn to interact using Keyboard, Actions</td>
+                                <td>30%</td>
+                                <td><input type="checkbox" name="vital"/></td>
+				<td>Week 2</td>
+				<td>Gopi</td>
+				<td>Actions class</td>
+                            </tr>
+                            <tr class='even'>
+                                <td>Learn XPath</td>
+                                <td>80%</td>
+                                <td><input type="checkbox" name="vital" /></td>
+				<td>Week 2</td>
+				<td>Koushik</td>
+				<td>XPath Patterns and Ruto</td>
+                            </tr>
+			   </table>
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="example">
+                        <div  class=" container table">
+                            <div class="large-6 small-12 columns">
+                                <br>
+                                <br>
+                                <label for="java">Get the count of number of columns
+                                </label> <br>
+                                <br>
+                                <label for="java">Get the count of number of rows
+                                </label> <br> <br>
+
+                                <label for="java">Get the progress value of 'Learn to interact with Elements'
+                                </label> <br> <br>
+                                <label for="java">Check the vital task for the least completed progress.
+                                </label> <br> <br>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="tl.html"></script>
+</body>
+
+
+<!-- Mirrored from www.leafground.com/pages/table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:26 GMT -->
+</html>

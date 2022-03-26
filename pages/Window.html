@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+
+<!-- Mirrored from www.leafground.com/pages/Window.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:28 GMT -->
+<head>    
+    <link rel="icon"  href="../images/tl.ico" type="image/x-icon" />
+    <link rel="shortcut icon"  href="../images/tl.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" media="screen">
+    <link rel="stylesheet" href="../css/main.css" media="screen">
+    <link rel="stylesheet" href="../css/header.css" media="screen">
+
+    <title>TestLeaf - Interact with Windows</title>
+</head>
+<script>
+var myWindow,newWindow;
+
+function openWin() {
+    myWindow=window.open('../home.html','','width=1200,height=600,menubar=no,toolbar=no,scrollbars=no,status=no,resizable=no');
+    myWindow.moveTo(100, 50);
+    myWindow.focus();
+}
+// End -->
+</script>
+<script type="text/javascript" language="JavaScript">
+<!-- Begin
+function openWindows() {
+window.open('Button.html','','toolbar=no,menubar=no,location=yes,height=320,width=300,left=1');
+window.open('Link.html','','toolbar=yes,menubar=yes,location=no,height=450,width=180,left=430');
+}
+// End -->
+</script>
+<script>
+function openWindowsWithWait() {
+	var now = new Date().getTime();
+    while(new Date().getTime() < (now + 4000)){ /* do nothing */ } 
+    myWindow=window.open('Button.html','','width=600,height=400,menubar=no,toolbar=no,scrollbars=no,status=no,resizable=no');
+	newWindow=window.open('Link.html','','width=600,height=400,toolbar=no,menubar=no,scrollbars=no,status=no,resizable=no');
+    myWindow.moveTo(50, 50);
+	newWindow.moveTo(650, 50);
+    myWindow.focus();
+}
+
+</script>
+<body class="page page-id-153 page-template page-template-page-keyword-category page-template-page-keyword-category-php" itemscope itemtype="http://schema.org/WebPage">
+    <div id="wrapper">
+        <div class="wrapper-outer">
+
+            <div class="wrapper wrapper-footer" data-alias="">
+                <div class="grid-container clearfix">
+                    <section class="row row-1">
+                        <section class="column column-1 grid-left-0 grid-width-24">
+                            <div class="block-content">
+                                <ul>
+                                    <li id="text-2" class="widget widget_text">
+                                        <h3 class="widget-title"><span class="widget-inner"></span></h3>
+                                        <a href="../home.html">
+                                            <img src="../images/testleaf_logo.png" alt="logo Testleaf" height="76" width="232">
+                                        </a>
+									</li>
+                                </ul>
+                            </div>
+                            <!-- .block-content -->
+                        </section>
+                        <!-- .column -->
+                    </section>
+                    <!-- .row -->
+                </div>
+                <!-- .grid-container -->
+            </div>
+            <div id="content">
+                <div class="container category_land">
+                    <div class="wp-page-heading">
+                        <h1 class="wp-heading" itemprop="name">Work with Windows<del></del></h1>
+                    </div>
+                </div>
+            </div>
+            <div id="contentblock" class="w560">
+                <section class="innerblock">
+					<div class="example">
+                        <div class="row">
+                            <div class="large-6 small-12 columns">
+                                <br>
+                                <br>
+                                 <label for="home">Click button to open home page in New Window</label> <br> <br>
+                                <button onclick="openWin();" id="home">Open Home Page</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+					<div class="example">
+                        <div class="row">
+                            <div class="large-6 small-12 columns">
+                                <br>
+                                <br>
+                                 <label for="position">Find the number of opened windows</label> <br> <br>
+                                <button onclick="openWindows()">Open Multiple Windows</button>
+                            </div>
+                        </div>
+                    </div>
+					<br>
+					<br>
+					<div class="example">
+                        <div class="row">
+                            <div class="large-6 small-12 columns">
+                                <br>
+                                <br>
+                                 <label for="position">Close all except this window </label> <br> <br>
+                                <button onclick="openWindows();" style="background-color:lightgreen" id="color" >Do not close me </button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+					<div class="example">
+                        <div class="row">
+                            <div class="large-6 small-12 columns">
+                                <br>
+                                <br>
+                                 <label for="position">Wait for 2 new Windows to open </label> <br> <br>
+                                <button onclick="openWindowsWithWait();" style="background-color:lightblue" id="color" >Wait for 5 seconds</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="tl.html"></script>
+</body>
+
+<!-- Mirrored from www.leafground.com/pages/Window.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:28 GMT -->
+</html>

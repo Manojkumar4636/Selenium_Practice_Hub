@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from www.leafground.com/pages/autoComplete.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:33 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TestLeaf - Auto Complete</title>
+    <link rel="stylesheet" href="../css/header.css" media="screen">
+    <link rel="icon" href="../images/tl.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/tl.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" media="screen">
+    <link rel="stylesheet" href="../css/main.css" media="screen">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            var availableTags = [
+                "Selenium",
+                "Appium",
+                "Protractor",
+                "Rest API",
+                "SOAP",
+                "Web Services",
+                "Cucumber"
+            ];
+            $("#tags").autocomplete({
+                source: availableTags
+            });
+        });
+    </script>
+    <style>
+        ol ol li {
+            color: darkgray
+        }
+
+        .inst {
+            font-size: large;
+            color: black;
+            user-select: none;
+            padding: 10px;
+            box-shadow: 0 1px 5px rgb(0, 0, 0, 0.5);
+            margin: 30px 0px 0px 0px;
+        }
+
+        .inst ol {
+            display: block;
+            color: brown;
+        }
+    </style>
+
+</head>
+
+<body class="page page-id-153 page-template page-template-page-keyword-category page-template-page-keyword-category-php"
+    itemscope itemtype="http://schema.org/WebPage">
+    <div id="wrapper">
+        <div class="wrapper-outer">
+
+            <div class="wrapper wrapper-footer" data-alias="">
+                <div class="grid-container clearfix">
+                    <section class="row row-1">
+                        <section class="column column-1 grid-left-0 grid-width-24">
+                            <div class="block-content">
+                                <ul>
+                                    <li id="text-2" class="widget widget_text">
+                                        <h3 class="widget-title">
+                                            <span class="widget-inner"></span>
+                                        </h3>
+                                        <a href="../home.html">
+                                            <img src="../images/testleaf_logo.png" alt="logo Testleaf" height="76"
+                                                width="232">
+                                        </a>
+                                </ul>
+                            </div>
+                            <!-- .block-content -->
+                        </section>
+                        <!-- .column -->
+                    </section>
+                    <!-- .row -->
+                </div>
+                <!-- .grid-container -->
+            </div>
+
+            <div id="content">
+                <div class="container category_land">
+                    <div class="wp-page-heading">
+                        <h1 class="wp-heading" itemprop="name">Interact with Auto Complete
+                            <del></del>
+                        </h1>
+                    </div>
+                </div>
+
+
+            </div>
+            <br /><br />
+            <div id="contentblock" class="w560">
+                <section class="innerblock">
+                    <div class="example">
+                        <div class="row">
+                            <div class="inst">
+                                <ol>TODO:
+                                    <li>Type any of the following - "Selenium",
+                                        "Appium",
+                                        "Protractor",
+                                        "Rest API",
+                                        "SOAP",
+                                        "Web Services",
+                                        "Cucumber" partially</li>
+                                    <li>Select the value from the suggestion</li>
+                                    <ol>TIP:
+                                        <li>Use Actions Class</li>
+                                    </ol>
+                                </ol>
+                            </div>
+                            <div class="large-6 small-12 columns">
+                                <br>
+                                <br>
+                                <label for="tags">Course Name: </label>
+                                <input id="tags">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <script src="tl.html"></script>
+</body>
+
+
+<!-- Mirrored from www.leafground.com/pages/autoComplete.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:35 GMT -->
+</html>

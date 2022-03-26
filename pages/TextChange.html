@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from www.leafground.com/pages/TextChange.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:44 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TestLeaf - Wait for Change of Text</title>
+    <link rel="stylesheet" href="../css/header.css" media="screen">
+    <link rel="icon" href="../images/tl.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/tl.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" media="screen">
+    <link rel="stylesheet" href="../css/main.css" media="screen">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../resources/demos/style.html">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+                document.getElementById("btn").innerText = "Click ME!"
+            }, 3000);
+            window.addEventListener('click', clicked, true);
+            function clicked(e) {
+                if (e.target.tagName == "BUTTON") {
+                    alert(e.target.textContent)
+                }
+            }
+        }, true);
+    </script>
+    <style>
+        .inst {
+            font-size: large;
+            color: black;
+            user-select: none;
+            padding: 10px;
+            box-shadow: 0 1px 5px rgb(0, 0, 0, 0.5);
+            margin: 10px 0px 0px 0px;
+        }
+
+        .inst ol {
+            display: block;
+            color: brown;
+        }
+
+        .btn {
+            margin: 50px 0 0 0px;
+
+        }
+
+        .todo p {
+            color: black;
+        }
+    </style>
+</head>
+
+<body class="page page-id-153 page-template page-template-page-keyword-category page-template-page-keyword-category-php"
+    itemscope itemtype="http://schema.org/WebPage">
+    <div id="wrapper">
+        <div class="wrapper-outer">
+
+            <div class="wrapper wrapper-footer" data-alias="">
+                <div class="grid-container clearfix">
+                    <section class="row row-1">
+                        <section class="column column-1 grid-left-0 grid-width-24">
+                            <div class="block-content">
+                                <ul>
+                                    <li id="text-2" class="widget widget_text">
+                                        <h3 class="widget-title">
+                                            <span class="widget-inner"></span>
+                                        </h3>
+                                        <a href="../home.html">
+                                            <img src="../images/testleaf_logo.png" alt="logo Testleaf" height="76"
+                                                width="232">
+                                        </a>
+                                </ul>
+                            </div>
+                            <!-- .block-content -->
+                        </section>
+                        <!-- .column -->
+                    </section>
+                    <!-- .row -->
+                </div>
+                <!-- .grid-container -->
+            </div>
+
+            <div id="content">
+                <div class="container category_land">
+                    <div class="wp-page-heading">
+                        <h1 class="wp-heading" itemprop="name">Explicit Wait for Text Change
+                            <del></del>
+                        </h1>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="contentblock" class="w560">
+                <section class="innerblock">
+                    <div class="example">
+                        <div class="row">
+                            <div class="large-6 small-12 columns">
+                                <div class="container">
+                                    <div class="inst">
+                                        <ol>TODO:
+                                            <li>Wait until the button text changes to Click ME!</li>
+                                            <li>Once you clicked Alert appears with the text Click ME! text, Verify that</li>
+                                        </ol>
+                                    </div>
+                                    <div class="todo">
+                                        <button class="btn" id="btn" onclick="clicked()">
+                                            I'm going to change !!</button><br /><br />
+                                        <!-- <p id="clicked">Great going from your side :)</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+            <!-- <script src="tl.js"></script> -->
+</body>
+
+
+<!-- Mirrored from www.leafground.com/pages/TextChange.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2022 03:37:44 GMT -->
+</html>
