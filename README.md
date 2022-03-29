@@ -3,5 +3,5 @@
 
 PRACTICE OUR WEBSITE AND IMPROVE YOUR WEB APPLICATION AUTOMATION TESTING SKILL
 
-Practice our WebSite:
+Click the WebSite Link:
 https://manojkumar4636.github.io/Selenium_Practice_Hub/
